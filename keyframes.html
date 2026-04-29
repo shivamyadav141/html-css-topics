@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and Animation</title>
+    <style>
+.container{
+    background-color: green;
+        
+}
+.box{
+    background-color: rgb(180, 237, 9);
+    width: 200px;
+    height: 200px;
+    animation-name: Shivam2;
+    position: absolute; /* movement ke liye zaroori*/
+    animation-duration:2s;
+    animation-iteration-count: 1; /* animation kitni baar chalega*/
+   /* animation-fill-mode: forwards;*/
+   /* animation-timing-function: ease-in-out;*/
+    /*animation-delay: 3s;*/
+    /*animation-direction: reverse;*/
+
+    /* these properties can be set using shorthand */
+
+   /* animation: animation-name animation-duration animation -timing-function animation-iteration-count animation delay animation-count animation-fill-mode;*/
+   animation: Shivam2 5s ease-in 1s 12 backwards;
+}
+@keyframes Shivam1{
+        from{
+         width:200px
+
+        }
+        to{
+    width: 1400px;
+        }
+    }
+    @keyframes Shivam2 {
+        0%{
+       top: 0px;
+       left: 0px;
+        }
+        25%{
+       top: 250px;
+       left: 0px;
+        }
+        75%{
+       top: 250px;
+       left: 250px;
+        }
+        100%{
+       top: 0px;
+       left: 250px;
+        }
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        this is box
+    </div>
+</body>
+</html>

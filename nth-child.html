@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nth-Child Example</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+           /* flex-wrap: wrap;*/
+        }
+        .box {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Odd boxes = yellow */
+        .container div:nth-child(odd) {
+            background: orange;
+        }
+
+        /* Even boxes = blue */
+        .container div:nth-child(even) {
+            background: lightblue;
+            color: black;
+        }
+
+        /* 3rd box = red (override) */
+        .container div:nth-child(3) {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Nth-Child Example</h2>
+<div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Box shadow and text shadow</title>
+   <style>
+      .container{
+   display:flex
+      }
+
+      .card{
+         padding:23px 12px;
+         margin:23px 12px;
+        /* border: 2px solid red;*/
+         background-color: tomato;
+       /*  box-shadow:10px 13px green ; /* ye number negative bhi hote hai toh ye uper chale jate hai */
+      /* box-shadow: -5px -5px green;*/
+     /* box-shadow: 15px 15px 15px;  for blur radius*/
+      box-shadow: 15px 15px 15px 15px greenyellow; /* for spread radius*/
+
+      box-shadow: inset 5px 5px green , 5px 5px blue;
+      }  /*box ke andar shadow*/
+
+
+   .card h2{
+  /* text-shadow:1px 3px white;*/ 
+   text-shadow:2px 2px 2px white;/* for text blur*/
+   }
+
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="card" id="card1">
+        <h2> Card1</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quo, nostrum minus eos itaque, doloribus odio fuga repudiandae ab cum, ducimus totam delectus perferendis eaque fugiat! Omnis, odit veniam vel harum adipisci aperiam nulla est!</p>
+      </div>
+      <div class="card" id="card2">
+        <h2> Card2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ex laborum maiores ullam totam explicabo quibusdam dicta animi nam quod, amet fuga. Quis doloremque, placeat veniam autem vero exercitationem sapiente.</p>
+      </div>
+      <div class="card" id="card3">
+        <h2>Card3</h2> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero dolor quia hic? Incidunt ut reprehenderit porro nostrum iusto sequi quaerat, repudiandae exercitationem ipsa illum, dolor voluptatem hic deleniti ad?
+      </div>
+   </div>
+</body>
+</html>

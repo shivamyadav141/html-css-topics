@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selector</title>
+    <style>
+        h1{
+            color:red;
+            background-color: blue;
+            font-size: bold;
+            text-align:center;
+        }
+       /* div li  p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        }*/
+
+
+        
+        /* if p is right indide div */
+         div>p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        }*/
+
+
+         /* p is next sibiling of div*/
+        div+p{
+            color: beige;
+            background-color: rgb(241, 111, 111);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on Selector</h1>
+    <div class="container">
+        <ul>
+<li class="item"><p> This ia another paragraph inside li</li>
+        </ul>
+        <li> this will not get affected</li>
+<p> This is paragraph</h1>
+        <p>This is another paragraph</h1>
+
+    </div>
+    <p> this is outer paragraph</h1>
+</body>
+</html>
